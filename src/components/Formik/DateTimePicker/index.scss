@@ -1,0 +1,14 @@
+.DateTimePicker {
+  input {
+    height: 34px;
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    &:disabled {
+      background: #eee;
+      cursor: not-allowed;
+    }
+  }
+}
