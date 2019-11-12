@@ -5,6 +5,8 @@ import moment from 'moment';
 import {
   Form,
   Input,
+  Checkbox,
+  Switch,
   DateTimePicker,
   Select,
   FieldArray,
@@ -73,6 +75,44 @@ export const input = () => (
             });
           }}
         />
+
+        <Buttons />
+
+        <Debug />
+      </div>
+    )}
+  </Form>
+);
+
+export const checkbox = () => (
+  <Form
+    initialValues={{
+      checked: false,
+    }}
+    onSubmit={onSubmit}
+  >
+    {() => (
+      <div>
+        <Checkbox name="checked" />
+
+        <Buttons />
+
+        <Debug />
+      </div>
+    )}
+  </Form>
+);
+
+export const switcher = () => (
+  <Form
+    initialValues={{
+      checked: false,
+    }}
+    onSubmit={onSubmit}
+  >
+    {() => (
+      <div>
+        <Switch name="checked" />
 
         <Buttons />
 

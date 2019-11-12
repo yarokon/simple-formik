@@ -15,6 +15,8 @@ class Select extends Component {
     name: PropTypes.string.isRequired,
     label: PropTypes.string,
     multi: PropTypes.bool,
+    clearable: PropTypes.bool,
+    searchable: PropTypes.bool,
     placeholder: PropTypes.string,
     required: PropTypes.bool,
     disabled: PropTypes.bool,
@@ -25,6 +27,8 @@ class Select extends Component {
 
   static defaultProps = {
     multi: false,
+    clearable: true,
+    searchable: true,
     required: false,
     disabled: false,
     validationSchema: [],
